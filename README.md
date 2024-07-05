@@ -66,9 +66,3 @@ Key functions include:
 - `updateProductList(products)`: Updates the product list in the DOM.
 - `updateCategoryButtons(selectedCategory)`: Highlights the selected category button.
 
-### Example
-
-```javascript
-window.onload = function() {
-    selectCategory('Men');
-};
