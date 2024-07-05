@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  text-align: center;
+}
+h1{
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  text-shadow:2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.categories{
+  display: flex;
+  justify-content: center;
+}
+.category-btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.category-btn.selected {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.product-item {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-item .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0px;
+  height: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-item .price {
+  color: black;
+  font-weight: bold;
+}
+
+.product-item .compare-at-price {
+  text-decoration: line-through;
+  color: gray;
+}
+.product-item .resbox{
+  position: relative;
+}
+
+.product-item .badge-text {
+  background-color: white;
+  font-size: 12px;
+  color: black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.product-item .text{
+  display: flex;
+  gap: 8px;
+}
+.product-item .pricebox{
+  display: flex;
+  gap: 12px;
+}
+.product-item .vendor{
+  margin: 12px 0px;
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+} 
+.product-item .dot{
+  margin: 5px 0px;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.product-item .add-to-cart-btn {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.product-item .percentage{
+  color: red;
+}
